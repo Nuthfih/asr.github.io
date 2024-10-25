@@ -1,91 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">My Portfolio</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="home">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-
-                <div class="slide first">
-                    <img src="https://via.placeholder.com/800x400" alt="Project 1">
-                </div>
-                <div class="slide">
-                    <img src="https://via.placeholder.com/800x400" alt="Project 2">
-                </div>
-                <div class="slide">
-                    <img src="https://via.placeholder.com/800x400" alt="Project 3">
-                </div>
-                <div class="slide">
-                    <img src="https://via.placeholder.com/800x400" alt="Project 4">
-                </div>
-
-                <!-- Automatic navigation buttons -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-
-                <!-- Manual navigation -->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            </div>
-        </div>
+    <section class="slider" id="home">
+      <div class="slides">
+        <div class="slide" style="background-image: url('image1.jpg')"></div>
+        <div class="slide" style="background-image: url('image2.jpg')"></div>
+        <div class="slide" style="background-image: url('image3.jpg')"></div>
+      </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>This is a brief description about me and my background.</p>
-        </div>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>Write something about yourself here.</p>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <p>A showcase of my projects.</p>
-        </div>
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <p>Showcase your projects here.</p>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to get in touch!</p>
-        </div>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Include your contact information here.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+      <p>© 2024 My Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
